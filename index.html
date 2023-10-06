@@ -12,15 +12,50 @@
 
 <body>
 
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
 
-    <main class="container">
+    <main class="container-fluid">
 
         <div class="row">
             <div class="col">
                 <h1>Bootstrap Examples Home!</h1>
-
-                <hr>
             </div>
 
         </div>
@@ -37,7 +72,7 @@
         </div>
 
         <div class="row">
-            <div id="pane1" class="col-sm-12 col-md-6 col-lg-4">
+            <div id="pane1" class="col-sm-12 col-md-6 col-lg-4 border-bottom">
                 one
             </div>
             <div id="pane2" class="col-sm-12 col-md-6 col-lg-4">
@@ -49,14 +84,60 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-12 col-lg-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rerum non nesciunt
                     quo corrupti, officia facilis voluptatum iure tempora impedit voluptates, temporibus
                     cumque, similique vel repellat voluptate! Qui, sunt ratione.</p>
 
             </div>
+
+            <div class="col-md-12 col-lg-6 border">
+                <!-- Examples of the text color utility classes being used to change the color of the text 
+in a paragraph element -->
+                <p class="text-primary">.text-primary</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-success">.text-success</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-warning">.text-warning</p>
+                <p class="text-info">.text-info</p>
+                <!-- Examples of the background color utility classes being used to change the background 
+color of a div element -->
+                <div class="bg-primary">.bg-primary</div>
+                <div class="bg-secondary">.bg-secondary</div>
+                <div class="bg-success">.bg-success</div>
+                <div class="bg-danger">.bg-danger</div>
+                <div class="bg-warning ">.bg-warning</div>
+                <div class="bg-info">.bg-info</div>
+                <div class="bg-light">.bg-light</div>
+                <!-- text-white added as well so the text is visible in the div -->
+                <div class="bg-dark text-white">.bg-dark</div>
+
+            </div>
         </div>
 
+        <div class="row">
+            <div class="col">
+                <!-- examples of padding utility classes combined with borders to help visualize the 
+differences -->
+                <span class="p-5 border">set the padding to 5 (1rem * 3) on all sides of the element</span>
+                <span class="px-3 border">Set the padding to 1rem on the left and right side of the
+                    element</span>
+                <span class="pt-1 border">Set the padding to (1rem *.25) on the top of the element</span>
+                <!-- examples of margin utility classes combined with borders to help visualize the 
+differences -->
+                <span class="m-5 border">set the margin to 5 (1rem * 3) on all sides of the element</span>
+                <span class="my-3 border">Set the margin to 1rem on the top and bottom of the
+                    element</span>
+                <span class="mb-1 border">Set the margin to (1rem *.25) on the bottom of the element</span>
+                <!-- combining padding and margin classes -->
+                <span class="m-5 p-5 border">set the margin and padding to 5 (1rem * 3) on all sides of the
+                    element</span>
+                <span class="my-3 py-3 border">Set the margin and padding to 1rem on the top and bottom of
+                    the element</span>
+                <span class="mb-1 pb-1 border">Set the margin and padding to (1rem *.25) on the bottom of
+                    the element</span>
+            </div>
+        </div>
 
     </main>
 
